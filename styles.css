@@ -15,22 +15,33 @@ body{
 }
 
 .top{
-    display: flex; /* Necesario para centrar */
+    display: flex;
     background-color: green;
     height: 30vh;
     width: 100%;
     .contenedor1{
-        height: 80vh;
-        .searchbar{
-            justify-content: center; /* Centra horizontalmente */
-            align-items: center; /* Centra verticalmente */
-            height: 40vh;
-            width: 70vh;
-            background-color: black;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+        display: flex;
+        height: 70%;
+        width: 100%;
 
+        input {
+            width: 60%;  /* Ancho */
+            height: 30%;  /* Alto */
+            &:focus {
+                outline: none;
+            }
         }
-        
+        button{
+            height: 30%;
+            aspect-ratio: 1/1;
+            cursor: pointer;
+            font-size: 16px;  /* Tamaño del texto */
+            background-color: darkgrey;
+        }
     }
+
 }
 
 .middle{
