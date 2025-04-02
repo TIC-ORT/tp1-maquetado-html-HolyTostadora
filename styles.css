@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.7rem;
+
+}
+
+.top{
+    display: flex; /* Necesario para centrar */
+    background-color: green;
+    height: 30vh;
+    width: 100%;
+    .contenedor1{
+        height: 80vh;
+        .searchbar{
+            justify-content: center; /* Centra horizontalmente */
+            align-items: center; /* Centra verticalmente */
+            height: 40vh;
+            width: 70vh;
+            background-color: black;
+
+        }
+        
+    }
+}
+
+.middle{
+    background-color: blue;
+    height: 30vh;
+    width: 100%;
+}
+.bottom{
+    background-color: red;
+    height: 40vh;
+    width: 100%;
+
+}
