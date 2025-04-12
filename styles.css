@@ -16,13 +16,13 @@ body{
 header{
     height: 10vh;
     background-color: #474f59;
-    display: flex;
     position: relative;
     width: 100%;
+    display: flex;
     .aside-header-searchbar{
         background-color: #ffc86d;
         height: 30%;
-        width: 25%;
+        width: 20%;
         top: 20%;
         left: 5%;
         position: absolute;
@@ -31,9 +31,25 @@ header{
         background-color: white;
         position: absolute;
         height: 12%;
-        width: 25%;
+        width: 20%;
         bottom: 19%;
         left: 5%;
+    }
+    .div-header {
+        position: absolute;
+        right: 0;
+        width: 60%;
+        height: 100%;
+        .div-header-text {
+            background-color: white;
+            height: 12%;
+            width: 15%;
+            position: absolute;
+            bottom: 19%;
+            &:nth-child(1) { left: 25%; }
+            &:nth-child(2) { left: 50%; }
+            &:nth-child(3) { left: 75%; }
+        }
     }
 }
 
